@@ -1,0 +1,907 @@
+//
+   Created by lianghongrong on 2016/3/29 0029.
+
+include header
+.content
+    // Start Page Header
+    .page-header
+        h1.title xx租车后台首页
+        ol.breadcrumb
+            li.active 国内最受欢迎xx租车系统，网站相关配置请参考帮助手册
+        // Start Page Header Right Div
+        .right
+            .btn-group(role='group', aria-label='...')
+                a.btn.btn-light(href='index.html') 控制面板
+                a.btn.btn-light(href='#')
+                    i.fa.fa-refresh
+                a.btn.btn-light(href='#')
+                    i.fa.fa-search
+                a#topstats.btn.btn-light(href='#')
+                    i.fa.fa-line-chart
+        // End Page Header Right Div
+    // End Page Header
+    // ////////////////////////////////////////////////////////////////////////////
+    // START CONTAINER
+    .container-widget
+        // Start Top Stats
+        .col-md-12
+            ul.topstats.clearfix
+                li.arrow
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-dot-circle-o
+                        |  Today Profit
+                    h3 $36.45
+                    span.diff
+                        b.color-down
+                            i.fa.fa-caret-down
+                            |  26%
+                        |  from yesterday
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-calendar-o
+                        |  This Week
+                    h3 $96.25
+                    span.diff
+                        b.color-up
+                            i.fa.fa-caret-up
+                            |  26%
+                        |  from last week
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-shopping-cart
+                        |  Total Sales
+                    h3.color-up 696
+                    span.diff
+                        b.color-up
+                            i.fa.fa-caret-up
+                            |  26%
+                        |  from last month
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-users
+                        |  Visitors
+                    h3 960
+                    span.diff
+                        b.color-down
+                            i.fa.fa-caret-down
+                            |  26%
+                        |  from yesterday
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-eye
+                        |  Page View
+                    h3.color-up 46.230
+                    span.diff
+                        b.color-down
+                            i.fa.fa-caret-down
+                            |  26%
+                        |  from yesterday
+                li.col-xs-6.col-lg-2
+                    span.title
+                        i.fa.fa-clock-o
+                        |  Avarage Time
+                    h3.color-down
+                        | 2:10
+                        small min
+                    span.diff
+                        b.color-up
+                            i.fa.fa-caret-up
+                            |  26%
+                        |  from last week
+        // End Top Stats
+        // Start First Row
+        .row
+            // Start Chart Daily
+            .col-md-12.col-lg-7
+                .panel-widget.widget.chart-with-stats.clearfix(style='height:450px;')
+                    .col-sm-12(style='height:450px;')
+                        h4.title
+                            | TODAY SALES
+                            small Last update: 1 Hours ago
+                        .top-label
+                            h2 11.291
+                            h4 Today Total
+                        #todaysales.bigchart
+                    .right(style='height:450px;')
+                        h4.title PAGE VIEW
+                        // start stats
+                        ul.widget-inline-list.clearfix
+                            li.col-12
+                                span 962
+                                | Themeforest
+                                i.chart.sparkline-green
+                            li.col-12
+                                span 367
+                                | Codecanyon
+                                i.chart.sparkline-blue
+                            li.col-12
+                                span 92
+                                | Photodune
+                                i.chart.sparkline-red
+                        // end stats
+            // End Chart Daily
+            // Start Files
+            .col-md-12.col-lg-5
+                .panel.panel-widget(style='height:450px;')
+                    .panel-title
+                        | My Files
+                        span.label.label-danger 29
+                        ul.panel-tools
+                            li
+                                a.icon
+                                    i.fa.fa-refresh
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-body.table-responsive
+                        table.table.table-dic.table-hover
+                            tbody
+                                tr
+                                    td
+                                        i.fa.fa-folder-o
+                                        | Projects
+                                    td Folder
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-file-archive-o
+                                        | Backup
+                                    td Zip
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-file-code-o
+                                        | Kode Theme
+                                    td Html
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-file-pdf-o
+                                        | Documents
+                                    td Pdf
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-folder-o
+                                        | Themes
+                                    td Folder
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-folder-o
+                                        | Uploaded Files
+                                    td Folder
+                                    td.text-r 27/2/2015 12:34 AM
+                                tr
+                                    td
+                                        i.fa.fa-folder-o
+                                        | Personal Files
+                                    td Folder
+                                    td.text-r 27/2/2015 12:34 AM
+            // End Files
+        // End First Row
+        // Start Second Row
+        .row
+            // Start Today Activity
+            .col-md-12.col-lg-3
+                .panel.panel-widget(style='height:380px;')
+                    .panel-title
+                        | TODAY ACTIVITY
+                        span.label.label-success 9
+                        ul.panel-tools.panel-tools-hover
+                            li
+                                a.icon
+                                    i.fa.fa-refresh
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-body
+                        ul.widget-inline-list.clearfix
+                            li.col-4
+                                span 1:52:22
+                                | Active Time
+                            li.col-4
+                                span 60%
+                                | Completed
+                            li.col-4
+                                span 0:11:46
+                                | Break Time
+                        #todayactivity.chart-on-bottom
+            // End Today Activity
+            // Start Server Status
+            .col-md-12.col-lg-6
+                .panel.panel-widget(style='height:380px;')
+                    .panel-title
+                        | SERVER STATUS
+                        span.label.label-default 196
+                        ul.panel-tools.panel-tools-hover
+                            li
+                                a.icon
+                                    i.fa.fa-refresh
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-body
+                        ul.widget-inline-list.clearfix
+                            li.col-3.color10
+                                span 28.9GB
+                                | Total Usage
+                            li.col-3
+                                span 92%
+                                | Space Left
+                            li.col-3.color7
+                                span 22%
+                                | CPU
+                            li.col-3
+                                span 512MB
+                                | Total RAM
+                        #realtime.flotchart-placeholder(style='height:190px;')
+            // End Server Status
+            // Start Profile Widget
+            .col-md-12.col-lg-3
+                .widget.profile-widget(style='height:380px;')
+                    img.profile-image(src='../backstage/img/profileimg.png', alt='img')
+                    h1 Jonathan Doe
+                    p
+                        i.fa.fa-map-marker
+                        |  London
+                    a.btn.btn-sm(href='#') Follow
+                    ul.stats.widget-inline-list.clearfix
+                        li.col-4
+                            span 2.109
+                            | Followers
+                        li.col-4
+                            span 596
+                            | Photos
+                        li.col-4
+                            span 902
+                            | Like
+            // End Profile Widget
+        // End Second Row
+        // Start Third Row
+        .row
+            // Start General Stats
+            .col-md-12.col-lg-6
+                .panel.panel-widget(style='height:205px;')
+                    .panel-title
+                        | General Stats
+                    .panel-body
+                        .easypie.margin-b-50(data-percent='82')
+                            span 82%
+                            | New Visit
+                        .easypie.margin-b-50(data-percent='30')
+                            span 30%
+                            | Order
+                        .easypie.margin-b-50.margin-b-40(data-percent='62')
+                            span 62%
+                            | Page View
+                        .easypie.margin-b-50(data-percent='15')
+                            span 15%
+                            | Client
+                        .easypie.margin-b-50(data-percent='45')
+                            span 45%
+                            | Storage
+                        .easypie.margin-b-50(data-percent='75')
+                            span 76%
+                            | Comments
+            // End General Stats
+            // Start TwitterBox
+            .col-md-6.col-lg-3
+                .widget.socialbox(style='background:#02A8F3; height:205px;')
+                    p.text
+                        | Never in all their history have men been able truly...
+                    p.text-info 22 May, 2015 via mobile
+                    .logo
+                        i.fa.fa-twitter
+                    ul.info
+                        li
+                            i.fa.fa-retweet
+                            | 694
+                        li
+                            i.fa.fa-star-o
+                            | 2.192
+            // End TwitterBox
+            // Start FacebookBox
+            .col-md-6.col-lg-3
+                .widget.socialbox(style='background:#47639E; height:205px;')
+                    p.text
+                        | Science has not yet mastered prophecy.
+                    p.text-info 22 May, 2015 via mobile
+                    .logo
+                        i.fa.fa-facebook
+                    ul.info
+                        li
+                            i.fa.fa-thumbs-up
+                            | 694
+                        li
+                            i.fa.fa-comment
+                            | 2.192
+            // End FacebookBox
+        // End Third Row
+        // Start Fourth Row
+        .row
+            // Start Browser Stats
+            .col-md-12.col-lg-3
+                .panel.panel-widget
+                    .panel-title
+                        | Browser Stats
+                        ul.panel-tools.panel-tools-hover
+                            li
+                                a.icon
+                                    i.fa.fa-refresh
+                            li
+                                a.icon.minimise-tool
+                                    i.fa.fa-minus
+                            li
+                                a.icon.expand-tool
+                                    i.fa.fa-expand
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-body
+                        ul.basic-list
+                            li
+                                | Google Chrome
+                                span.right.label.label-default 42.8%
+                            li
+                                | Firefox
+                                span.right.label.label-danger 16.9%
+                            li
+                                | Safari
+                                span.right.label.label-success 15.5%
+                            li
+                                | Opera
+                                span.right.label.label-primary 11.8%
+                            li
+                                | Internet Explorer
+                                span.right.label.label-danger 3.2%
+                            li
+                                | Mobile
+                                span.right.label.label-warning 3%
+                            li
+                                | Others
+                                span.right.label.label-warning 0%
+            // End Browser Stats
+            // Start Orders
+            .col-md-12.col-lg-6
+                .panel.panel-widget
+                    .panel-title
+                        | LAST ORDERS
+                        span.label.label-warning 196
+                        ul.panel-tools
+                            li
+                                a.icon.search-tool
+                                    i.fa.fa-search
+                            li
+                                a.icon.minimise-tool
+                                    i.fa.fa-minus
+                            li
+                                a.icon.expand-tool
+                                    i.fa.fa-expand
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-search
+                        form
+                            input.form-control(type='text', placeholder='Search...')
+                            i.fa.fa-search.icon
+                    .panel-body.table-responsive
+                        table.table.table-hover.table-striped
+                            thead
+                                tr
+                                    td.text-center
+                                        i.fa.fa-trash
+                                    td Order ID
+                                    td Product
+                                    td Buyer
+                                    td Date
+                                    td Payment
+                            tbody
+                                tr
+                                    td.text-center
+                                        .checkbox.margin-t-0
+                                            input#checkbox1(type='checkbox')
+                                            label(for='checkbox1')
+                                    td
+                                        | #
+                                        b 9652
+                                    td Kode Gaming Laptop
+                                    td John Doe
+                                    td 12/10/2015
+                                    td Credit Card
+                                tr
+                                    td.text-center
+                                        .checkbox.margin-t-0
+                                            input#checkbox2(type='checkbox')
+                                            label(for='checkbox2')
+                                    td
+                                        | #
+                                        b 1963
+                                    td New Season Jacket
+                                    td Jane Doe
+                                    td 12/10/2015
+                                    td Paypal
+                                tr
+                                    td.text-center
+                                        .checkbox.margin-t-0
+                                            input#checkbox3(type='checkbox')
+                                            label(for='checkbox3')
+                                    td
+                                        | #
+                                        b 9652
+                                    td IO Mouse
+                                    td Jonathan Doe
+                                    td 12/10/2015
+                                    td Credit Card
+                                tr
+                                    td.text-center
+                                        .checkbox.margin-t-0
+                                            input#checkbox4(type='checkbox')
+                                            label(for='checkbox4')
+                                    td
+                                        | #
+                                        b 9651
+                                    td Doe Bike
+                                    td Jonathan Doe
+                                    td 12/10/2015
+                                    td Credit Card
+            // End Orders
+            // Start Inbox
+            .col-md-12.col-lg-3
+                .panel.panel-widget
+                    .panel-title
+                        | Inbox
+                        span.label.label-danger 9
+                        ul.panel-tools
+                            li
+                                a.icon.minimise-tool
+                                    i.fa.fa-minus
+                            li
+                                a.icon.expand-tool
+                                    i.fa.fa-expand
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-body
+                        ul.mailbox-inbox
+                            li
+                                a.item.clearfix(href='#')
+                                    img.img(src='../backstage/img/profileimg.png', alt='img')
+                                    span.from Jonathan Doe
+                                    |                 Hello, m8 how is goin ?
+                                    span.date 22 May
+                            li
+                                a.item.clearfix(href='#')
+                                    img.img(src='../backstage/img/profileimg2.png', alt='img')
+                                    span.from Egemem Ka
+                                    |                 Problems look mighty small...
+                                    span.date 22 May
+                            li
+                                a.item.clearfix(href='#')
+                                    img.img(src='../backstage/img/profileimg3.png', alt='img')
+                                    span.from James Throwing
+                                    |                 New job offer ?
+                                    span.date 22 May
+                            li
+                                a.item.clearfix(href='#')
+                                    img.img(src='../backstage/img/profileimg4.png', alt='img')
+                                    span.from Timmy Jefsin
+                                    |                 Tonight Party
+                                    span.date 22 May
+            // End Inbox
+        // End Fourth Row
+        // Start Fifth Row
+        .row
+            // Start Project Stats
+            .col-md-12.col-lg-6
+                .panel.panel-widget
+                    .panel-title
+                        | Projects Stats
+                        span.label.label-info 62
+                        ul.panel-tools
+                            li
+                                a.icon.minimise-tool
+                                    i.fa.fa-minus
+                            li
+                                a.icon.expand-tool
+                                    i.fa.fa-expand
+                            li
+                                a.icon.closed-tool
+                                    i.fa.fa-times
+                    .panel-search
+                        form
+                            input.form-control(type='text', placeholder='Search...')
+                            i.fa.fa-search.icon
+                    .panel-body.table-responsive
+                        table.table.table-hover
+                            thead
+                                tr
+                                    td ID
+                                    td Project
+                                    td Status
+                                    td.text-right Progress
+                            tbody
+                                tr
+                                    td 965
+                                    td Kode Dashboard Template
+                                    td
+                                        span.label.label-default Developing
+                                    td.text-right
+                                        span.demo-project-stats
+                                tr
+                                    td 620
+                                    td EBI iOS Application
+                                    td
+                                        span.label.label-warning Design
+                                    td.text-right
+                                        span.demo-project-stats
+                                tr
+                                    td 621
+                                    td Kode Landing Page
+                                    td
+                                        span.label.label-info Testing
+                                    td.text-right
+                                        span.demo-project-stats
+                                tr
+                                    td 621
+                                    td John Coffe Shop Logo
+                                    td
+                                        span.label.label-danger Canceled
+                                    td.text-right
+                                        span.demo-project-stats
+                                tr
+                                    td 621
+                                    td BKM Website Design
+                                    td
+                                        span.label.label-primary Reply waiting
+                                    td.text-right
+                                        span.demo-project-stats
+            // Start Project Stats
+            // Start BlogPost
+            .col-md-12.col-lg-3
+                .panel.panel-widget.blog-post
+                    .panel-body
+                        .image-div.color10-bg
+                            img.image(src='../backstage/img/example1.jpg', alt='img')
+                            h1.title
+                                a(href='#') Across the sea of space, the stars are other suns.
+                        p.text
+                            | There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally...
+                        a(href='#') Read More
+                        p.author
+                            img(src='../backstage/img/profileimg.png', alt='img')
+                            span Jonathan Doe
+                            |             Designer
+            // End BlogPost
+            // Start Teammates
+            .col-md-12.col-lg-3
+                .panel.panel-info.panel-widget
+                    .panel-title
+                        | Teammates
+                    .panel-body
+                        ul.basic-list.image-list
+                            li
+                                img.img(src='../backstage/img/profileimg.png', alt='img')
+                                b Jonathan Doe
+                                span.desc Designer
+                            li
+                                img.img(src='../backstage/img/profileimg2.png', alt='img')
+                                b Egemem Ka
+                                span.desc Front-End Developer
+                            li
+                                img.img(src='../backstage/img/profileimg3.png', alt='img')
+                                b Timmy Jefsin
+                                span.desc Back-End Developer
+                            li
+                                img.img(src='../backstage/img/profileimg4.png', alt='img')
+                                b James K. Throwing
+                                span.desc Marketing
+                            li
+                                img.img(src='../backstage/img/profileimg5.png', alt='img')
+                                b John Doe
+                                span.desc iOS Developer
+            // End Teammates
+        // End Fifth Row
+    // END CONTAINER
+    // ////////////////////////////////////////////////////////////////////////////
+    // Start Footer
+    .row.footer
+        .col-md-6.text-left
+            | Copyright © 2016.Company hrope All rights reserved.
+    // End Footer
+// End Content
+// ////////////////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////////////////
+// START SIDEPANEL
+.sidepanel(role='tabpanel')
+    // Nav tabs
+    ul.nav.nav-tabs(role='tablist')
+        li.active(role='presentation')
+            a(href='#today', aria-controls='today', role='tab', data-toggle='tab') TODAY
+        li(role='presentation')
+            a(href='#tasks', aria-controls='tasks', role='tab', data-toggle='tab') TASKS
+        li(role='presentation')
+            a(href='#chat', aria-controls='chat', role='tab', data-toggle='tab') CHAT
+    // Tab panes
+    .tab-content
+        // Start Today
+        #today.tab-pane.active(role='tabpanel')
+            .sidepanel-m-title
+                | Today
+                span.left-icon
+                    a(href='#')
+                        i.fa.fa-refresh
+                span.right-icon
+                    a(href='#')
+                        i.fa.fa-file-o
+            .gn-title NEW
+            ul.list-w-title
+                li
+                    a(href='#')
+                        span.label.label-danger ORDER
+                        span.date 9 hours ago
+                        h4 New Jacket 2.0
+                        |             Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                li
+                    a(href='#')
+                        span.label.label-success COMMENT
+                        span.date 14 hours ago
+                        h4 Bill Jackson
+                        |             Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                li
+                    a(href='#')
+                        span.label.label-info MEETING
+                        span.date at 2:30 PM
+                        h4 Developer Team
+                        |             Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                li
+                    a(href='#')
+                        span.label.label-warning EVENT
+                        span.date 3 days left
+                        h4 Birthday Party
+                        |             Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+        // End Today
+        // Start Tasks
+        #tasks.tab-pane(role='tabpanel')
+            .sidepanel-m-title
+                | To-do List
+                span.left-icon
+                    a(href='#')
+                        i.fa.fa-pencil
+                span.right-icon
+                    a(href='#')
+                        i.fa.fa-trash
+            .gn-title TODAY
+            ul.todo-list
+                li.checkbox.checkbox-primary
+                    input#checkboxside1(type='checkbox')
+                    label(for='checkboxside1') Add new products
+                li.checkbox.checkbox-primary
+                    input#checkboxside2(type='checkbox')
+                    label(for='checkboxside2')
+                        b May 12, 6:30 pm
+                        |  Meeting with Team
+                li.checkbox.checkbox-warning
+                    input#checkboxside3(type='checkbox')
+                    label(for='checkboxside3') Design Facebook page
+                li.checkbox.checkbox-info
+                    input#checkboxside4(type='checkbox')
+                    label(for='checkboxside4') Send Invoice to customers
+                li.checkbox.checkbox-danger
+                    input#checkboxside5(type='checkbox')
+                    label(for='checkboxside5') Meeting with developer team
+            .gn-title TOMORROW
+            ul.todo-list
+                li.checkbox.checkbox-warning
+                    input#checkboxside6(type='checkbox')
+                    label(for='checkboxside6') Redesign our company blog
+                li.checkbox.checkbox-success
+                    input#checkboxside7(type='checkbox')
+                    label(for='checkboxside7') Finish client work
+                li.checkbox.checkbox-info
+                    input#checkboxside8(type='checkbox')
+                    label(for='checkboxside8') Call Johnny from Developer Team
+        // End Tasks
+        // Start Chat
+        #chat.tab-pane(role='tabpanel')
+            .sidepanel-m-title
+                | Friend List
+                span.left-icon
+                    a(href='#')
+                        i.fa.fa-pencil
+                span.right-icon
+                    a(href='#')
+                        i.fa.fa-trash
+            .gn-title ONLINE MEMBERS (3)
+            ul.group
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg.png', alt='img')
+                        b Allice Mingham
+                        | Los Angeles
+                    span.status.online
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg2.png', alt='img')
+                        b James Throwing
+                        | Las Vegas
+                    span.status.busy
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg3.png', alt='img')
+                        b Fred Stonefield
+                        | New York
+                    span.status.away
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg4.png', alt='img')
+                        b Chris M. Johnson
+                        | California
+                    span.status.online
+            .gn-title OFFLINE MEMBERS (8)
+            ul.group
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg5.png', alt='img')
+                        b Allice Mingham
+                        | Los Angeles
+                    span.status.offline
+                li.member
+                    a(href='#')
+                        img(src='../backstage/img/profileimg6.png', alt='img')
+                        b James Throwing
+                        | Las Vegas
+                    span.status.offline
+            form.search
+                input.form-control(type='text', placeholder='Search a Friend...')
+        // End Chat
+// END SIDEPANEL
+// ////////////////////////////////////////////////////////////////////////////
+//
+  ================================================
+  jQuery Library
+  ================================================
+script(type='text/javascript', src='../backstage/js/jquery.min.js')
+//
+  ================================================
+  Bootstrap Core JavaScript File
+  ================================================
+script(src='../backstage/js/bootstrap/bootstrap.min.js')
+//
+  ================================================
+  Plugin.js - Some Specific JS codes for Plugin Settings
+  ================================================
+script(type='text/javascript', src='../backstage/js/plugins.js')
+//
+  ================================================
+  Bootstrap Select
+  ================================================
+script(type='text/javascript', src='../backstage/js/bootstrap-select/bootstrap-select.js')
+//
+  ================================================
+  Bootstrap Toggle
+  ================================================
+script(type='text/javascript', src='../backstage/js/bootstrap-toggle/bootstrap-toggle.min.js')
+//
+  ================================================
+  Flot Chart
+  ================================================
+// main file
+script(type='text/javascript', src='../backstage/js/flot-chart/flot-chart.js')
+// time.js
+script(type='text/javascript', src='../backstage/js/flot-chart/flot-chart-time.js')
+// stack.js
+script(type='text/javascript', src='../backstage/js/flot-chart/flot-chart-stack.js')
+// pie.js
+script(type='text/javascript', src='../backstage/js/flot-chart/flot-chart-pie.js')
+// demo codes
+script(type='text/javascript', src='../backstage/js/flot-chart/flot-chart-plugin.js')
+//
+  ================================================
+  Easy Pie Chart
+  ================================================
+// main file
+script(type='text/javascript', src='../backstage/js/easypiechart/easypiechart.js')
+// demo codes
+script(type='text/javascript', src='../backstage/js/easypiechart/easypiechart-plugin.js')
+//
+  ================================================
+  Sparkline
+  ================================================
+// main file
+script(type='text/javascript', src='../backstage/js/sparkline/sparkline.js')
+// demo codes
+script(type='text/javascript', src='../backstage/js/sparkline/sparkline-plugin.js')
+//
+  ================================================
+  Rickshaw
+  ================================================
+// d3
+script(src='../backstage/js/rickshaw/d3.v3.js')
+// main file
+script(src='../backstage/js/rickshaw/rickshaw.js')
+// demo codes
+script(src='../backstage/js/rickshaw/rickshaw-plugin.js')
+//
+  ================================================
+  Moment.js
+  ================================================
+script(type='text/javascript', src='../backstage/js/moment/moment.min.js')
+//
+  ================================================
+  Below codes are only for index widgets
+  ================================================
+// Today Sales
+script.
+    // set up our data series with 50 random data points
+    var seriesData = [ [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(20);
+    for (var i = 0; i < 110; i++) {
+        random.addData(seriesData);
+    }
+    // instantiate our graph!
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById("todaysales"),
+        renderer: 'bar',
+        series: [
+            {
+                color: "#33577B",
+                data: seriesData[0],
+                name: 'Photodune'
+            }, {
+                color: "#77BBFF",
+                data: seriesData[1],
+                name: 'Themeforest'
+            }, {
+                color: "#C1E0FF",
+                data: seriesData[2],
+                name: 'Codecanyon'
+            }
+        ]
+    } );
+    graph.render();
+    var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+        graph: graph,
+        formatter: function(series, x, y) {
+            var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+            var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+            var content = swatch + series.name + ": " + parseInt(y) + '<br>' + date;
+            return content;
+        }
+    } );
+// Today Activity
+script.
+    // set up our data series with 50 random data points
+    var seriesData = [ [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(20);
+    for (var i = 0; i < 50; i++) {
+        random.addData(seriesData);
+    }
+    // instantiate our graph!
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById("todayactivity"),
+        renderer: 'area',
+        series: [
+            {
+                color: "#9A80B9",
+                data: seriesData[0],
+                name: 'London'
+            }, {
+                color: "#CDC0DC",
+                data: seriesData[1],
+                name: 'Tokyo'
+            }
+        ]
+    } );
+    graph.render();
+    var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+        graph: graph,
+        formatter: function(series, x, y) {
+            var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+            var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+            var content = swatch + series.name + ": " + parseInt(y) + '<br>' + date;
+            return content;
+        }
+    } );
+include footer

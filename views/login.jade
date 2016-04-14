@@ -1,0 +1,33 @@
+include header
+.container
+    .account
+        h1 用户登录
+        if errors
+            each error in errors
+                div.alert.alert-danger
+                    span #{error.error}
+        if success
+            div.alert.alert-success
+                span 登录成功
+                div.pull-right
+                    a(href="/") 返回首页
+        .account-pass
+            .col-md-8.account-top
+                form(method="post",role="form")
+                    div
+                        span 邮箱
+                        input(type='text',placeholder="邮箱",required="true",name="username")
+                    div
+                        span 密码
+                        input(type='password',placeholder="密码",required="true",name="password")
+                    input(type='submit', value='登 录')
+            .col-md-4.left-account
+                a(href='single.html')
+                    img.img-responsive(src='../images/s1.jpg', alt='')
+                .five
+                    h2 25%
+                    span 最高折扣
+                a.create(href='/users/register') 创建一个账号？
+                .clearfix
+            .clearfix
+ include  footer

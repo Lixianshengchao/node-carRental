@@ -1,0 +1,156 @@
+//extends layout
+//
+//block content
+//  h1= title
+//  p Welcome to hrope #{title}
+
+include header
+.banner
+    .container
+        script(src='js/responsiveslides.min.js')
+        script.
+            $(function () {
+                $("#slider").responsiveSlides({
+                    auto: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+                });
+            });
+        #top.callbacks_container
+            ul#slider.rslides
+                li
+                    .banner-text
+                        h3 超值优惠 低至6折
+                        p
+                            | 优惠活动，点亮生活趁现在
+                            | 多种租车模式想怎么租，就怎么租，时间与里程统统都忘掉
+                            | 月租价格，再刷新低，低价诱惑，就等你了
+                        a(href='single.html') 查看更多
+                li
+                    .banner-text
+                        h3 浦发卡租车有惊喜
+                        p
+                            | 浦发卡租车 三大特惠乐享不停，新老用户来享，总有一个适合你
+                        a(href='single.html') 查看更多
+                li
+                    .banner-text
+                        h3 赫兹全球租车，点我直达
+                        p
+                            | 全球租车网络 横跨6大洲，支持异国还车 超多优惠轮番来袭
+                        a(href='single.html') 查看更多
+.copyrights
+    | Collect from
+    a(href='#') hrope.cn
+// content
+.content
+    .container
+        .content-top
+            h1 优惠车型大搜罗
+            .grid-in
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 艾瑞泽5
+                    p
+                        a(href='single.html') 本周特惠，长租艾瑞泽5
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi1.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 东南DX7
+                    p
+                        a(href='single.html') 国产性价比SUV，值得体验
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi2.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 本田思域
+                    p
+                        a(href='single.html') 本田思域，省油代步新选择
+                .clearfix
+            .grid-in
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi3.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 帕萨特
+                    p
+                        a(href='single.html') 低调奢华桥车之选
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi4.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 哈弗H6
+                    p
+                        a(href='single.html') 热销运动型SUV长城H6
+                .col-md-4.grid-top
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/pi5.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-left.b-delay03
+                                span 奥迪4L
+                    p
+                        a(href='single.html') 德系品牌体验的信心之选
+                .clearfix
+        // -
+        .content-top-bottom
+            h2 租辆车，周边游推荐
+            .col-md-6.men
+                a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                    img.img-responsive(src='images/t1.jpg', alt='')
+                    .b-wrapper
+                        h3.b-animate.b-from-top.top-in.b-delay03
+                            span 租车特惠出游，赏西湖美景
+            .col-md-6
+                .col-md1
+                    a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                        img.img-responsive(src='images/t2.jpg', alt='')
+                        .b-wrapper
+                            h3.b-animate.b-from-top.top-in1.b-delay03
+                                span 黄山风景区三日游
+                .col-md2
+                    .col-md-6.men1
+                        a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                            img.img-responsive(src='images/t3.jpg', alt='')
+                            .b-wrapper
+                                h3.b-animate.b-from-top.top-in2.b-delay03
+                                    span 游乌镇
+                    .col-md-6.men2
+                        a.b-link-stripe.b-animate-go.thickbox(href='single.html')
+                            img.img-responsive(src='images/t4.jpg', alt='')
+                            .b-wrapper
+                                h3.b-animate.b-from-top.top-in2.b-delay03
+                                    span 结伴同行
+                    .clearfix
+            .clearfix
+    //
+    .content-bottom
+        ul
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo.jpg', alt='')
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo1.jpg', alt='')
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo2.jpg', alt='')
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo3.jpg', alt='')
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo4.jpg', alt='')
+            li
+                a(href='#')
+                    img.img-responsive(src='images/lo5.jpg', alt='')
+            .clearfix
+include footer

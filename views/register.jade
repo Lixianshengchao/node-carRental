@@ -1,0 +1,34 @@
+//
+   Created by lianghongrong on 2016/3/28 0028.
+include header
+.container
+    .register
+        h1 账号注册
+        form
+            .col-md-6.register-top-grid
+                h3 个人信息
+                div
+                    span 姓名
+                    input(type='text')
+                div
+                    span 手机号码
+                    input(type='text')
+                div
+                    span 邮箱地址
+                    input(type='text')
+                a.news-letter(href='#')
+                    label.checkbox
+                        input(type='checkbox', name='checkbox', checked='')
+                        i
+                        | 电子邮箱注册
+            .col-md-6.register-bottom-grid
+                h3 登录信息
+                div
+                    span 密码
+                    input(type='password')
+                div
+                    span 确认密码
+                    input(type='password')
+                input(type='submit', value='提 交')
+            .clearfix
+include footer

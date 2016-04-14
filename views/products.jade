@@ -1,0 +1,280 @@
+//
+   Created by lianghongrong on 2016/3/29 0029.
+
+include header
+.product
+    .container
+        .col-md-3.product-price
+            .rsidebar.span_1_of_left
+                .of-left
+                    h3.cate Categories
+                ul.menu
+                    li.item1
+                        a(href='#') Men
+                        ul.cute
+                            li.subitem1
+                                a(href='single.html') Cute Kittens
+                            li.subitem2
+                                a(href='single.html') Strange Stuff
+                            li.subitem3
+                                a(href='single.html') Automatic Fails
+                    li.item2
+                        a(href='#') Women
+                        ul.cute
+                            li.subitem1
+                                a(href='single.html') Cute Kittens
+                            li.subitem2
+                                a(href='single.html') Strange Stuff
+                            li.subitem3
+                                a(href='single.html') Automatic Fails
+                    li.item3
+                        a(href='#') Kids
+                        ul.cute
+                            li.subitem1
+                                a(href='single.html') Cute Kittens
+                            li.subitem2
+                                a(href='single.html') Strange Stuff
+                            li.subitem3
+                                a(href='single.html') Automatic Fails
+                    li.item4
+                        a(href='#') Accesories
+                        ul.cute
+                            li.subitem1
+                                a(href='single.html') Cute Kittens
+                            li.subitem2
+                                a(href='single.html') Strange Stuff
+                            li.subitem3
+                                a(href='single.html') Automatic Fails
+                    li.item4
+                        a(href='#') Shoes
+                        ul.cute
+                            li.subitem1
+                                a(href='product.html') Cute Kittens
+                            li.subitem2
+                                a(href='product.html') Strange Stuff
+                            li.subitem3
+                                a(href='product.html') Automatic Fails
+            // initiate accordion
+            script(type='text/javascript').
+                $(function() {
+                    var menu_ul = $('.menu > li > ul'),
+                            menu_a  = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function(e) {
+                        e.preventDefault();
+                        if(!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true,true).slideUp('normal');
+                        }
+                    });
+                });
+            //
+            .product-middle
+                .fit-top
+                    h6.shop-top Lorem Ipsum
+                    a.shop-now(href='single.html') SHOP NOW
+                    .clearfix
+            .sellers
+                .of-left-in
+                    h3.tag Tags
+                .tags
+                    ul
+                        li
+                            a(href='#') design
+                        li
+                            a(href='#') fashion
+                        li
+                            a(href='#') lorem
+                        li
+                            a(href='#') dress
+                        li
+                            a(href='#') fashion
+                        li
+                            a(href='#') dress
+                        li
+                            a(href='#') design
+                        li
+                            a(href='#') dress
+                        li
+                            a(href='#') design
+                        li
+                            a(href='#') fashion
+                        li
+                            a(href='#') lorem
+                        li
+                            a(href='#') dress
+                        .clearfix
+            //
+            .product-bottom
+                .of-left-in
+                    h3.best Best Sellers
+                .product-go
+                    .fashion-grid
+                        a(href='single.html')
+                            img.img-responsive(src='images/p1.jpg', alt='')
+                    .fashion-grid1
+                        h6.best2
+                            a(href='single.html')
+                                | Lorem ipsum dolor sit
+                                | amet consectetuer
+                        span.price-in1  $40.00
+                    .clearfix
+                .product-go
+                    .fashion-grid
+                        a(href='single.html')
+                            img.img-responsive(src='images/p2.jpg', alt='')
+                    .fashion-grid1
+                        h6.best2
+                            a(href='single.html')
+                                | Lorem ipsum dolor sit
+                                | amet consectetuer
+                        span.price-in1  $40.00
+                    .clearfix
+            .per1
+                a(href='single.html')
+                    img.img-responsive(src='images/pro.jpg', alt='')
+                    .six1
+                        h4 DISCOUNT
+                        p Up to
+                        span 60%
+        .col-md-9.product1
+            .bottom-product
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi3.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi1.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi4.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .clearfix
+            .bottom-product
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi5.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi1.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .clearfix
+            .bottom-product
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi3.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi4.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .col-md-4.bottom-cd.simpleCart_shelfItem
+                    .product-at
+                        a(href='single.html')
+                            img.img-responsive(src='images/pi5.jpg', alt='')
+                            .pro-grid
+                                span.buy-in Buy Now
+                    p.tun It is a long established fact that a reader
+                    a.item_add(href='#')
+                        p.number.item_price
+                            i
+                            | $500.00
+                .clearfix
+        .clearfix
+        nav.in
+            ul.pagination
+                li.disabled
+                    a(href='#', aria-label='Previous')
+                        span(aria-hidden='true') «
+                li.active
+                    a(href='#')
+                        | 1
+                        span.sr-only (current)
+                li
+                    a(href='#')
+                        | 2
+                        span.sr-only
+                li
+                    a(href='#')
+                        | 3
+                        span.sr-only
+                li
+                    a(href='#')
+                        | 4
+                        span.sr-only
+                li
+                    a(href='#')
+                        | 5
+                        span.sr-only
+                li
+                    a(href='#', aria-label='Next')
+                        span(aria-hidden='true') »
+
+include footer

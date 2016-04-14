@@ -1,0 +1,219 @@
+doctype html
+head
+    title titles
+    link(href='../css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='../js/jquery.min.js')
+    // Custom Theme files
+    // theme-style
+    link(href='../css/style.css', rel='stylesheet', type='text/css', media='all')
+    // //theme-style
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='一呼租车,租车')
+    script(type='application/x-javascript').
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // fonts
+    link(href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900', rel='stylesheet', type='text/css')
+    link(href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900', rel='stylesheet', type='text/css')
+    // //fonts
+    // start menu
+    link(href='../css/memenu.css', rel='stylesheet', type='text/css', media='all')
+    script(type='text/javascript', src='../js/memenu.js')
+    script.
+        $(document).ready(function(){$(".memenu").memenu();});
+    script(src='../js/simpleCart.min.js')
+// header
+.header
+    .header-top
+        .container
+            .search
+                form
+                    input(type='text')
+                    input(type='submit', value='Go')
+            .header-left
+                ul
+                    li
+                        a.lock(href='/users/login') 登录
+                    li
+                        a.lock(href='/users/register') 注册
+                    li
+                .cart.box_1
+                    a(href='checkout.html')
+                        h3
+                            .total
+                                span.simpleCart_total
+                                |  (
+                                span#simpleCart_quantity.simpleCart_quantity
+                                |  )
+                            img(src='../images/cart.png', alt='')
+                    p
+                        a.simpleCart_empty(href='javascript:;') 空空如也~
+                .clearfix
+            .clearfix
+    .container
+        .head-top
+            .logo
+                a(href='/')
+                    img(src='../images/logo.png', alt='')
+            .h_menu4
+                ul.memenu.skyblue
+                    li.active.grid
+                        a.color8(href='/') 主页
+                    li
+                        a.color1(href='javascript:;') 租车类型
+                        .mepanel
+                            .row
+                                .col1
+                                    .h_nav
+                                        ul
+                                            li
+                                                a(href='products.html') 短租自驾
+                                            li
+                                                a(href='products.html') 私人专车
+                                            li
+                                                a(href='products.html') 长租
+                                            li
+                                                a(href='products.html') 企业租车
+                                            li
+                                                a(href='products.html') 顺风车
+                                            li
+                                                a(href='products.html') 个人租车
+                                            li
+                                                a(href='products.html') 国际租车
+                                            li
+                                                a(href='products.html') Jumpers & Cardigans
+                                            li
+                                                a(href='products.html') Leather Jackets
+                                            li
+                                                a(href='products.html') Long Sleeve T-Shirts
+                                            li
+                                                a(href='products.html') Loungewear
+                                .col1
+                                    .h_nav
+                                        ul
+                                            li
+                                                a(href='products.html') Shirts
+                                            li
+                                                a(href='products.html') Shoes, Boots & Trainers
+                                            li
+                                                a(href='products.html') Shorts
+                                            li
+                                                a(href='products.html') Suits & Blazers
+                                            li
+                                                a(href='products.html') Sunglasses
+                                            li
+                                                a(href='products.html') Sweatpants
+                                            li
+                                                a(href='products.html') Swimwear
+                                            li
+                                                a(href='products.html') Trousers & Chinos
+                                            li
+                                                a(href='products.html') T-Shirts
+                                            li
+                                                a(href='products.html') Underwear & Socks
+                                            li
+                                                a(href='products.html') Vests
+                                .col1
+                                    .h_nav
+                                        h4 Popular Brands
+                                        ul
+                                            li
+                                                a(href='products.html') Levis
+                                            li
+                                                a(href='products.html') Persol
+                                            li
+                                                a(href='products.html') Nike
+                                            li
+                                                a(href='products.html') Edwin
+                                            li
+                                                a(href='products.html') New Balance
+                                            li
+                                                a(href='products.html') Jack & Jones
+                                            li
+                                                a(href='products.html') Paul Smith
+                                            li
+                                                a(href='products.html') Ray-Ban
+                                            li
+                                                a(href='products.html') Wood Wood
+                    li.grid
+                        a.color2(href='javascript:;') 	选择品牌
+                        .mepanel
+                            .row
+                                .col1
+                                    .h_nav
+                                        ul
+                                            li
+                                                a(href='products.html') AC Schnitzer
+                                            li
+                                                a(href='products.html') Arash
+                                            li
+                                                a(href='products.html') 阿尔法罗密欧
+                                            li
+                                                a(href='products.html') 阿斯顿 · 马丁
+                                            li
+                                                a(href='products.html') 大众奥迪
+                                            li
+                                                a(href='products.html') 上汽通用五菱
+                                            li
+                                                a(href='products.html') 华晨宝马
+                                            li
+                                                a(href='products.html') 保时捷
+                                            li
+                                                a(href='products.html') 北京汽车
+                                            li
+                                                a(href='products.html') 奔驰
+                                            li
+                                                a(href='products.html') 东风本田
+                                .col1
+                                    .h_nav
+                                        ul
+                                            li
+                                                a(href='products.html') 比亚迪
+                                            li
+                                                a(href='products.html') 东风标致
+                                            li
+                                                a(href='products.html') 上汽通用别克
+                                            li
+                                                a(href='products.html') 宾利
+                                            li
+                                                a(href='products.html') 长城汽车
+                                            li
+                                                a(href='products.html') 长安标致雪铁龙
+                                            li
+                                                a(href='products.html') 上汽大众
+                                            li
+                                                a(href='products.html') 东南汽车
+                                            li
+                                                a(href='products.html') 广汽丰田
+                                            li
+                                                a(href='products.html') 长安福特
+                                            li
+                                                a(href='products.html') 观致
+                                .col1
+                                    .h_nav
+                                        h4 品牌列表
+                                        ul
+                                            li
+                                                a(href='products.html') 广汽传祺
+                                            li
+                                                a(href='products.html') 哈弗
+                                            li
+                                                a(href='products.html') 海马汽车
+                                            li
+                                                a(href='products.html') 吉利
+                                            li
+                                                a(href='products.html') 奇瑞
+                                            li
+                                                a(href='products.html') Jeep
+                                            li
+                                                a(href='products.html') 江淮
+                                            li
+                                                a(href='products.html') 凯迪拉克
+                                            li
+                                                a(href='products.html') 雷克萨斯
+                    li
+                        a.color4(href='/information') 租车那点事
+                    li
+                        a.color6(href='/contact') 留言
+            .clearfix
