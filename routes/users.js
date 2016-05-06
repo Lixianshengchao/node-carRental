@@ -74,6 +74,7 @@ function checkUser(userName,password){
 		console.log(results);
 		eventEmiiter.emit("loginfailed");
 		mysql.close();
+
 	})
 }
 
