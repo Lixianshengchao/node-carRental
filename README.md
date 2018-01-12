@@ -1,2 +1,2 @@
 # node-carRental
-基于express框架的NodeJS实战项目 （租车完整项目）
+基于express框架的租车平台实战项目
